@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [main]
 
-name: Quarto Publish
+name: Publish Shiny App
 
 jobs:
   build-deploy:
