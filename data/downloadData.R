@@ -1,6 +1,6 @@
 
 source(here::here("data", "scrapePackages.R"))
-allPkgs <- readr::read_csv(here::here("packages", "packages.csv"), show_col_types = FALSE)
+allPkgs <- readr::read_csv(here::here("data", "packages.csv"), show_col_types = FALSE)
 pkgs <- allPkgs |>
   dplyr::filter(.data$dev == "ox") |>
   dplyr::select(!"dev")
